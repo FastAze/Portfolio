@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>baptiste@portfolio ~ À propos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="bg-grid"></div>
+  <div class="bg-noise"></div>
+
+  <main class="terminal">
+
+    <header class="term-header">
+      <div class="term-buttons">
+        <span class="btn-close"></span>
+        <span class="btn-min"></span>
+        <span class="btn-max"></span>
+      </div>
+      <div class="term-title">baptiste@portfolio: ~</div>
+      <div class="term-tabs">
+        <span class="tab active">~ /home/baptiste</span>
+      </div>
+    </header>
+
+    <nav class="navbar" aria-label="Navigation principale">
+      <a href="index.html"       class="nav-link active"><span class="nav-key">:about</span></a>
+      <a href="projets.html"     class="nav-link"><span class="nav-key">:projects</span></a>
+      <a href="competences.html" class="nav-link"><span class="nav-key">:skills</span></a>
+      <a href="veille.html"      class="nav-link"><span class="nav-key">:veille</span></a>
+    </nav>
+
+    <div class="term-body">
+
+      <!-- Hero fastfetch -->
+      <section>
+        <div class="prompt-line" style="margin-top:0">
+          <span class="ps1-user">baptiste</span><span class="ps1-at">@</span><span class="ps1-host">portfolio</span>
+          <span class="ps1-arrow"> </span>
+          <span class="ps1-path">~</span>
+          <span class="ps1-prompt"> ❯ </span>
+          <span class="ps1-cmd">fastfetch</span>
+        </div>
+
+        <div class="hero">
+          <pre class="ascii" aria-hidden="true">
+██████╗     ██████╗
+██╔══██╗   ██╔════╝
+██████╔╝   ██║     
+██╔══██╗   ██║     
+██████╔╝██╗╚██████╗
+╚═════╝ ╚═╝ ╚═════╝</pre>
+
+          <div>
+            <p class="info-name">
+              <span class="user">baptiste</span><span class="at">@</span><span class="host">portfolio</span>
+            </p>
+            <p class="info-sep">──────────────────────────────</p>
+            <ul class="info-list">
+              <li><span class="key">Établisement</span><span class="val">Institut Limayrac</span></li>
+              <li><span class="key">Formation</span><span class="val">BTS SIO Option SLAM</span></li>
+              <li><span class="key">Focus</span><span class="val">Bac+5 . Réussire le BTS</span></li>
+              <li><span class="key">Compétences</span><span class="val">Développeur web</span></li>
+            </ul>
+            <div class="typewriter-line">
+              <span class="tw-prompt">$</span>
+              <span class="tw-text" id="tw"></span><span class="tw-cursor"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bio -->
+      <section class="about-bio">
+        <div class="prompt-line">
+          <span class="ps1-user">baptiste</span><span class="ps1-at">@</span><span class="ps1-host">portfolio</span>
+          <span class="ps1-arrow"> </span>
+          <span class="ps1-path">~</span>
+          <span class="ps1-prompt"> ❯ </span>
+          <span class="ps1-cmd">cat about.md</span>
+        </div>
+
+        <article class="md-output">
+          <p><span class="md-h"># À propos</span></p>
+          <p>
+            Je m'appelle <em>Baptiste Chaillou</em>, étudiant en <em>BTS SIO option SLAM</em>
+            à l'Institut Limayrac (Toulouse).
+            Je suis développeur web <em>front-end et back-end</em>, passionné par la création
+            d'applications web.
+          </p>
+          <p>
+            <span class="md-h">## Ce qui me motive</span>
+          </p>
+          <p>
+            Au-delà du cadre scolaire, je pratique <em>l'auto-hébergement</em>,
+            le <em>scripting</em> et la <em>contribution open source</em> via un
+            homelab personnel (Tailscale, conteneurs Podman (forgejo, vaultwarden)).
+          </p>
+        </article>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="prompt-line">
+          <span class="ps1-user">baptiste</span><span class="ps1-at">@</span><span class="ps1-host">portfolio</span>
+          <span class="ps1-arrow"> </span><span class="ps1-path">~</span>
+          <span class="ps1-prompt"> ❯ </span>
+          <span class="ps1-cmd">whois baptiste</span>
+        </div>
+
+        <div class="contact-block">
+          <div class="contact-line">
+            <span class="ck">Email</span>
+            <span class="cv">baptistechaillou9@gmail.com</span>
+          </div>
+          <div class="contact-line">
+            <span class="ck">GitHub</span>
+            <a class="cv" href="https://github.com/FastAze" target="_blank">github.com/FastAze</a>
+          </div>
+          <div class="contact-line">
+            <span class="ck">LinkedIn</span>
+            <a class="cv" href="https://www.linkedin.com/in/baptiste-chaillou-354b6a331/" target="_blank">linkedin.com/in/baptiste-chaillou</a>
+          </div>
+          <div class="contact-line">
+            <span class="ck">Localisation</span>
+            <span class="cv">Toulouse, France</span>
+          </div>
+        </div>
+
+        <div class="prompt-line idle">
+          <span class="ps1-user">baptiste</span><span class="ps1-at">@</span><span class="ps1-host">portfolio</span>
+          <span class="ps1-arrow"> </span><span class="ps1-path">~</span>
+          <span class="ps1-prompt"> ❯ </span>
+          <span class="cursor">█</span>
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="statusbar">
+      <span class="sb-left">
+        <span class="sb-mode">NORMAL</span>
+        <span class="sb-file">~/portfolio/index.html</span>
+      </span>
+      <span class="sb-right">
+        <span class="sb-info">utf-8</span>
+        <span class="sb-info">html</span>
+        <span class="sb-info">100%</span>
+        <span class="sb-info" id="clock">--:--</span>
+      </span>
+    </footer>
+
+  </main>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

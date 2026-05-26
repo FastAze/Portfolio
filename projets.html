@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>baptiste@portfolio ~ Projets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="bg-grid"></div>
+  <div class="bg-noise"></div>
+
+  <main class="terminal">
+
+    <header class="term-header">
+      <div class="term-buttons">
+        <span class="btn-close"></span>
+        <span class="btn-min"></span>
+        <span class="btn-max"></span>
+      </div>
+      <div class="term-title">baptiste@portfolio: ~/projects</div>
+      <div class="term-tabs">
+        <span class="tab active">~ /projects</span>
+      </div>
+    </header>
+
+    <nav class="navbar" aria-label="Navigation principale">
+      <a href="index.html"       class="nav-link"><span class="nav-key">:about</span></a>
+      <a href="projets.html"     class="nav-link active"><span class="nav-key">:projects</span></a>
+      <a href="competences.html" class="nav-link"><span class="nav-key">:skills</span></a>
+      <a href="veille.html"      class="nav-link"><span class="nav-key">:veille</span></a>
+    </nav>
+
+    <div class="term-body">
+
+      <section id="projects" class="section">
+        <div class="prompt-line">
+          <span class="ps1-user">baptiste</span><span class="ps1-at">@</span><span class="ps1-host">portfolio</span>
+          <span class="ps1-arrow"> </span><span class="ps1-path">~/projects</span>
+          <span class="ps1-prompt"> ❯ </span>
+          <span class="ps1-cmd">ls --tree --all</span>
+        </div>
+
+        <!-- Projets BTS -->
+        <div class="section-label">
+          <span class="label-tag tag-bts">BTS</span>
+          <span class="label-title">Projets réalisés en formation</span>
+        </div>
+
+        <div class="tiling-grid">
+
+          <article class="tile tile-bts">
+            <header class="tile-head">
+              <span class="tile-tag">BTS</span>
+              <h3 class="tile-title">APPFAQ</h3>
+            </header>
+            <p class="tile-desc">
+              Application web de FAQ dynamique avec gestion de catégories
+              et back-office d'administration.
+            </p>
+            <ul class="tile-tech">
+              <li>PHP</li><li>HTML</li><li>CSS</li>
+              <li>JavaScript</li><li>MySQL</li><li>phpMyAdmin</li><li>Infinityfree</li>
+            </ul>
+            <div class="tile-actions">
+              <a href="https://appfaq.page.gd/?i=1" target="_blank" class="btn-link">↗ projet</a>
+              <a href="https://github.com/FastAze/APPFAQ" target="_blank" class="btn-link">↗ code</a>
+            </div>
+          </article>
+
+          <article class="tile tile-bts">
+            <header class="tile-head">
+              <span class="tile-tag">BTS</span>
+              <h3 class="tile-title">Maison des Ligues</h3>
+            </header>
+            <p class="tile-desc">
+              Site vitrine présentant la Maison des Ligues, hébergé sur
+              GitHub Pages avec workflow de déploiement automatique.
+            </p>
+            <ul class="tile-tech">
+              <li>HTML</li><li>CSS</li><li>GitHub Pages</li>
+            </ul>
+            <div class="tile-actions">
+              <a href="https://fastaze.github.io/maison-de-ligue/" target="_blank" class="btn-link">↗ projet</a>
+              <a href="https://github.com/FastAze/maison-de-ligue" target="_blank" class="btn-link">↗ code</a>
+            </div>
+          </article>
+
+          <article class="tile tile-bts">
+            <header class="tile-head">
+              <span class="tile-tag">BTS</span>
+              <h3 class="tile-title">RestoWeb</h3>
+            </header>
+            <p class="tile-desc">
+              Application web de gestion de restaurant : commandes, menu,
+              administration côté serveur.
+            </p>
+            <ul class="tile-tech">
+              <li>PHP</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>MySQL</li>
+            </ul>
+            <div class="tile-actions">
+              <button class="btn-link btn-popup" onclick="openPopup('image/img11.png')">↗ preview</button>
+            </div>
+          </article>
+
+          <article class="tile tile-bts">
+            <header class="tile-head">
+              <span class="tile-tag">BTS</span>
+              <h3 class="tile-title">RestoSwing</h3>
+            </header>
+            <p class="tile-desc">
+              Application desktop Java Swing pour la gestion d'un restaurant,
+              version bureau de RestoWeb.
+            </p>
+            <ul class="tile-tech">
+              <li>Java</li><li>Swing</li><li>MySQL</li>
+            </ul>
+            <div class="tile-actions">
+              <button class="btn-link btn-popup" onclick="openPopup('image/img11.png')">↗ preview</button>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Projets Formation -->
+        <div class="section-label" style="margin-top: 28px;">
+          <span class="tile-tag tag-formation">FORMATION</span>
+          <span class="label-title">Projets réalisés en milieu professionnel</span>
+        </div>
+
+        <div class="tiling-grid">
+
+          <article class="tile tile-formation">
+            <header class="tile-head">
+              <span class="tile-tag tag-formation">FORMATION</span>
+              <h3 class="tile-title">Phosfolike</h3>
+            </header>
+            <p class="tile-desc">
+              Plateforme de simulation de campagnes de phishing à visée
+              pédagogique. Création de templates, suivi des clics, tableau
+              de bord analytique.
+            </p>
+            <ul class="tile-tech">
+              <li>Python</li><li>Django</li><li>PostgreSQL</li>
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="tile-actions">
+              <button class="btn-link btn-popup" onclick="openPopup('image/phosfopre.png')">↗ preview</button>
+            </div>
+          </article>
+
+          <article class="tile tile-formation">
+            <header class="tile-head">
+              <span class="tile-tag tag-formation">FORMATION</span>
+              <h3 class="tile-title">Telegram Leak Logger</h3>
+            </header>
+            <p class="tile-desc">
+              Outil web pour collecter et analyser les fuites d'information
+              sur des groupes Telegram. Extraction automatique, historique,
+              dashboard de visualisation.
+            </p>
+            <ul class="tile-tech">
+              <li>Python</li><li>Django</li><li>PostgreSQL</li>
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="tile-actions">
+              <button class="btn-link btn-popup" onclick="openPopup('image/tll.png')">↗ preview</button>
+              <a href="https://github.com/FastAze/django-telegram-group-logger" target="_blank" class="btn-link">↗ code</a>
+            </div>
+          </article>
+
+          <article class="tile tile-formation">
+            <header class="tile-head">
+              <span class="tile-tag tag-formation">FORMATION</span>
+              <h3 class="tile-title">Étudiant Prospect</h3>
+            </header>
+            <p class="tile-desc">
+              Outil web pour centraliser et suivre les informations sur
+              les étudiants prospects d'un établissement scolaire.
+            </p>
+            <ul class="tile-tech">
+              <li>PHP</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>MySQL</li>
+            </ul>
+            <div class="tile-actions">
+              <button class="btn-link btn-popup" onclick="openPopup('image/etudiantprospect.png')">↗ preview</button>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Projets Perso -->
+        <div class="section-label" style="margin-top: 28px;">
+          <span class="tile-tag tag-perso">PERSO</span>
+          <span class="label-title">Projets personnels</span>
+        </div>
+
+        <div class="tiling-grid">
+
+          <article class="tile tile-perso">
+            <header class="tile-head">
+              <span class="tile-tag tag-perso">PERSO</span>
+              <h3 class="tile-title">Figura Avatar</h3>
+            </header>
+            <p class="tile-desc">
+              Avatar Minecraft custom avec HUD de combat scripté en Lua :
+              alerte stare, distance cible, DPS meter, intégration MIDI.
+            </p>
+            <ul class="tile-tech">
+              <li>Lua</li><li>Figura</li><li>Loam UI</li>
+            </ul>
+            <div class="tile-actions">
+              <a href="https://github.com/FastAze" target="_blank" class="btn-link">↗ code</a>
+            </div>
+          </article>
+
+          <article class="tile tile-perso">
+            <header class="tile-head">
+              <span class="tile-tag tag-perso">PERSO</span>
+              <h3 class="tile-title">Dotfiles &amp; ghprofile</h3>
+            </header>
+            <p class="tile-desc">
+              Configuration complète de mon environnement : Ghostty,
+              Neovim, Zsh, Starship, fastfetch. Outil CLI ghprofile.sh
+              pour afficher un profil GitHub stylé en terminal.
+            </p>
+            <ul class="tile-tech">
+              <li>Shell</li><li>Lua</li><li>stow</li><li>Catppuccin</li>
+            </ul>
+            <div class="tile-actions">
+              <a href="https://github.com/FastAze" target="_blank" class="btn-link">↗ code</a>
+            </div>
+          </article>
+
+          <article class="tile tile-perso">
+            <header class="tile-head">
+              <span class="tile-tag tag-perso">PERSO</span>
+              <h3 class="tile-title">Homelab Steam Deck</h3>
+            </header>
+            <p class="tile-desc">
+              Steam Deck reconverti en serveur : NeoForge 1.21.1 Minecraft,
+              Ollama, services web auto-hébergés, accès via Tailscale.
+            </p>
+            <ul class="tile-tech">
+              <li>Linux</li><li>Docker</li><li>Tailscale</li><li>SteamOS</li>
+            </ul>
+            <div class="tile-actions">
+              <span class="btn-link" style="opacity:0.5;cursor:default">↗ setup</span>
+            </div>
+          </article>
+
+          <article class="tile tile-perso">
+            <header class="tile-head">
+              <span class="tile-tag tag-perso">PERSO</span>
+              <h3 class="tile-title">Portfolio</h3>
+            </header>
+            <p class="tile-desc">
+              Ce portfolio même, développé from scratch en HTML/CSS/JS,
+              avec design inspiré de Vim et de l'esthétique terminal.
+            </p>
+            <ul class="tile-tech">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="tile-actions">
+              <a href="https://github.com/FastAze/portfolio" target="_blank" class="btn-link">↗ code</a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="prompt-line idle">
+          <span class="ps1-user">baptiste</span><span class="ps1-at">@</span><span class="ps1-host">portfolio</span>
+          <span class="ps1-arrow"> </span><span class="ps1-path">~/projects</span>
+          <span class="ps1-prompt"> ❯ </span>
+          <span class="cursor">█</span>
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="statusbar">
+      <span class="sb-left">
+        <span class="sb-mode">NORMAL</span>
+        <span class="sb-file">~/portfolio/projets.html</span>
+      </span>
+      <span class="sb-right">
+        <span class="sb-info">utf-8</span>
+        <span class="sb-info">html</span>
+        <span class="sb-info">100%</span>
+        <span class="sb-info" id="clock">--:--</span>
+      </span>
+    </footer>
+
+  </main>
+
+  <!-- Popup image/PDF -->
+  <div class="popup-overlay" id="popup-overlay" onclick="closePopup(event)">
+    <div class="popup-container" id="popup-container">
+      <button class="popup-close" onclick="closePopup()">&times;</button>
+      <div id="popup-content"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+  <script>
+    function openPopup(filePath) {
+      const overlay = document.getElementById('popup-overlay');
+      const content = document.getElementById('popup-content');
+      const ext = filePath.split('.').pop().toLowerCase();
+      if (ext === 'pdf') {
+        content.innerHTML = `<iframe src="${filePath}" class="popup-pdf"></iframe>`;
+      } else {
+        content.innerHTML = `<img src="${filePath}" class="popup-image" alt="preview">`;
+      }
+      overlay.classList.add('active');
+      document.addEventListener('keydown', handleEsc);
+    }
+    function closePopup(e) {
+      if (e && e.target !== document.getElementById('popup-overlay') && !e.target.classList.contains('popup-close')) return;
+      const overlay = document.getElementById('popup-overlay');
+      overlay.classList.remove('active');
+      document.getElementById('popup-content').innerHTML = '';
+      document.removeEventListener('keydown', handleEsc);
+    }
+    function handleEsc(e) { if (e.key === 'Escape') { document.getElementById('popup-overlay').classList.remove('active'); document.getElementById('popup-content').innerHTML = ''; document.removeEventListener('keydown', handleEsc); } }
+  </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Ignorer les fichiers de Claude et IDE, qui contiennent des données sensibles et ne doivent pas être suivis par git
+.claude/
+.vscode/
+
+# Ignorer les fichiers de l'ancient projet de portfolio, qui ne sont plus pertinents
+porfo_old/

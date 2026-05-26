@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>baptiste@portfolio ~ Compétences</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="bg-grid"></div>
+  <div class="bg-noise"></div>
+
+  <main class="terminal">
+
+    <header class="term-header">
+      <div class="term-buttons">
+        <span class="btn-close"></span>
+        <span class="btn-min"></span>
+        <span class="btn-max"></span>
+      </div>
+      <div class="term-title">baptiste@portfolio: ~/competences</div>
+      <div class="term-tabs">
+        <span class="tab active">~ /competences</span>
+      </div>
+    </header>
+
+    <nav class="navbar" aria-label="Navigation principale">
+      <a href="index.html"       class="nav-link"><span class="nav-key">:about</span></a>
+      <a href="projets.html"     class="nav-link"><span class="nav-key">:projects</span></a>
+      <a href="competences.html" class="nav-link active"><span class="nav-key">:skills</span></a>
+      <a href="veille.html"      class="nav-link"><span class="nav-key">:veille</span></a>
+    </nav>
+
+    <div class="term-body">
+
+      <section id="skills" class="section">
+
+        <!-- Référentiel BTS -->
+        <div class="prompt-line">
+          <span class="ps1-user">baptiste</span><span class="ps1-at">@</span><span class="ps1-host">portfolio</span>
+          <span class="ps1-arrow"> </span><span class="ps1-path">~/competences</span>
+          <span class="ps1-prompt"> ❯ </span>
+          <span class="ps1-cmd">grep -r "competence" ./referentiel-bts</span>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3><span class="skill-num">01</span> Gérer le patrimoine informatique</h3>
+            <ul>
+              <li>Recenser et identifier les ressources numériques</li>
+              <li>Exploiter référentiels, normes et standards adoptés par le prestataire</li>
+              <li>Mettre en place et vérifier les niveaux d'habilitation</li>
+              <li>Vérifier les conditions de continuité du service</li>
+              <li>Gérer des sauvegardes</li>
+              <li>Vérifier le respect des règles d'utilisation</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3><span class="skill-num">02</span> Répondre aux incidents et demandes</h3>
+            <ul>
+              <li>Collecter, suivre et orienter les demandes</li>
+              <li>Traiter les demandes réseau et système</li>
+              <li>Traiter les demandes applicatives</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3><span class="skill-num">03</span> Développer la présence en ligne</h3>
+            <ul>
+              <li>Valoriser l'image numérique de l'organisation</li>
+              <li>Référencer les services en ligne</li>
+              <li>Mesurer leur visibilité</li>
+              <li>Participer à l'évolution d'un site Web</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3><span class="skill-num">04</span> Travailler en mode projet</h3>
+            <ul>
+              <li>Analyser objectifs et modalités d'organisation</li>
+              <li>Planifier les activités</li>
+              <li>Évaluer les indicateurs de suivi et analyser les écarts</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3><span class="skill-num">05</span> Mettre à disposition un service</h3>
+            <ul>
+              <li>Tests d'intégration et d'acceptation</li>
+              <li>Déployer un service</li>
+              <li>Accompagner les utilisateurs dans la mise en place</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3><span class="skill-num">06</span> Organiser son développement pro</h3>
+            <ul>
+              <li>Environnement d'apprentissage personnel</li>
+              <li>Outils et stratégies de veille informationnelle</li>
+              <li>Gérer son identité professionnelle</li>
+              <li>Développer son projet professionnel</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Tableau de synthèse -->
+        <div class="prompt-line" style="margin-top: 36px;">
+          <span class="ps1-user">baptiste</span><span class="ps1-at">@</span><span class="ps1-host">portfolio</span>
+          <span class="ps1-arrow"> </span><span class="ps1-path">~/competences</span>
+          <span class="ps1-prompt"> ❯ </span>
+          <span class="ps1-cmd">cat tableau-synthese.md</span>
+        </div>
+
+        <div class="md-output" style="margin-bottom: 16px;">
+          <p><span class="md-h"># Tableau de synthèse des compétences</span></p>
+          <p>
+            Les cellules marquées <em>X</em> sont cliquables — elles ouvrent une capture d'écran
+            ou un lien vers le projet justifiant la compétence acquise.
+          </p>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="competences-table">
+            <thead>
+              <tr>
+                <th class="col-projet">Projet / Activité</th>
+                <th title="Gérer le patrimoine informatique">01 · Patrimoine</th>
+                <th title="Répondre aux incidents et demandes">02 · Incidents</th>
+                <th title="Développer la présence en ligne">03 · Présence web</th>
+                <th title="Travailler en mode projet">04 · Mode projet</th>
+                <th title="Mettre à disposition un service">05 · Service</th>
+                <th title="Organiser son développement pro">06 · Dév. pro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="category-row">
+                <td colspan="7">— Compétences acquises en 1ère année de BTS —</td>
+              </tr>
+              <tr>
+                <td>Maison des Ligues</td>
+                <td></td>
+                <td></td>
+                <td><a href="https://fastaze.github.io/maison-de-ligue/" target="_blank" class="cell-link">X</a></td>
+                <td><a href="https://github.com/FastAze/maison-de-ligue" target="_blank" class="cell-link">X</a></td>
+                <td class="cell-clickable" onclick="openPopup('image/pages2.png')">X</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>APPFAQ</td>
+                <td class="cell-clickable" onclick="openPopup('image/image5.png')">X</td>
+                <td></td>
+                <td><a href="https://appfaq.page.gd/" target="_blank" class="cell-link">X</a></td>
+                <td><a href="https://github.com/FastAze/APPFAQ" target="_blank" class="cell-link">X</a></td>
+                <td class="cell-clickable" onclick="openPopup('image/image6.png')">X</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>GLPI</td>
+                <td class="cell-clickable" onclick="openPopup('image/glpi.png')">X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>LinkedIn</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="https://www.linkedin.com/in/baptiste-chaillou-354b6a331/" target="_blank" class="cell-link">X</a></td>
+              </tr>
+              <tr>
+                <td>Portfolio</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="cell-clickable" onclick="openPopup('image/pages1.png')">X</td>
+                <td>X</td>
+              </tr>
+              <tr class="category-row">
+                <td colspan="7">— Compétences acquises en 2ème année de BTS —</td>
+              </tr>
+              <tr>
+                <td>RestoWeb</td>
+                <td class="cell-clickable" onclick="openPopup('image/img11.png')">X</td>
+                <td class="cell-clickable" onclick="openPopup('image/img12.png')">X</td>
+                <td></td>
+                <td class="cell-clickable" onclick="openPopup('image/img13.png')">X</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>RestoSwing</td>
+                <td class="cell-clickable" onclick="openPopup('image/img11.png')">X</td>
+                <td></td>
+                <td></td>
+                <td class="cell-clickable" onclick="openPopup('image/img13.png')">X</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="category-row">
+                <td colspan="7">— Compétences acquises en milieu professionnel —</td>
+              </tr>
+              <tr>
+                <td>Phosfolike</td>
+                <td class="cell-clickable" onclick="openPopup('image/image1.png')">X</td>
+                <td><a href="https://github.com/FastAze/phosfolike" target="_blank" class="cell-link">X</a></td>
+                <td></td>
+                <td></td>
+                <td class="cell-clickable" onclick="openPopup('image/image2.png')">X</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Telegram Leak Logger</td>
+                <td class="cell-clickable" onclick="openPopup('image/image3.png')">X</td>
+                <td><a href="https://github.com/FastAze/django-telegram-group-logger" target="_blank" class="cell-link">X</a></td>
+                <td></td>
+                <td></td>
+                <td class="cell-clickable" onclick="openPopup('image/image4.png')">X</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Étudiant Prospect</td>
+                <td class="cell-clickable" onclick="openPopup('image/image7.png')">X</td>
+                <td class="cell-clickable" onclick="openPopup('image/img8.png')">X</td>
+                <td class="cell-clickable" onclick="openPopup('image/etudiantprospect.png')">X</td>
+                <td class="cell-clickable" onclick="openPopup('image/img9.png')">X</td>
+                <td class="cell-clickable" onclick="openPopup('image/img10.png')">X</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="prompt-line idle">
+          <span class="ps1-user">baptiste</span><span class="ps1-at">@</span><span class="ps1-host">portfolio</span>
+          <span class="ps1-arrow"> </span><span class="ps1-path">~/competences</span>
+          <span class="ps1-prompt"> ❯ </span>
+          <span class="cursor">█</span>
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="statusbar">
+      <span class="sb-left">
+        <span class="sb-mode">NORMAL</span>
+        <span class="sb-file">~/portfolio/competences.html</span>
+      </span>
+      <span class="sb-right">
+        <span class="sb-info">utf-8</span>
+        <span class="sb-info">html</span>
+        <span class="sb-info">100%</span>
+        <span class="sb-info" id="clock">--:--</span>
+      </span>
+    </footer>
+
+  </main>
+
+  <!-- Popup image/PDF -->
+  <div class="popup-overlay" id="popup-overlay" onclick="closePopup(event)">
+    <div class="popup-container" id="popup-container">
+      <button class="popup-close" onclick="closePopup()">&times;</button>
+      <div id="popup-content"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+  <script>
+    function openPopup(filePath) {
+      const overlay = document.getElementById('popup-overlay');
+      const content = document.getElementById('popup-content');
+      const ext = filePath.split('.').pop().toLowerCase();
+      if (ext === 'pdf') {
+        content.innerHTML = `<iframe src="${filePath}" class="popup-pdf"></iframe>`;
+      } else {
+        content.innerHTML = `<img src="${filePath}" class="popup-image" alt="preview">`;
+      }
+      overlay.classList.add('active');
+      document.addEventListener('keydown', handleEsc);
+    }
+    function closePopup(e) {
+      if (e && e.target !== document.getElementById('popup-overlay') && !e.target.classList.contains('popup-close')) return;
+      const overlay = document.getElementById('popup-overlay');
+      overlay.classList.remove('active');
+      document.getElementById('popup-content').innerHTML = '';
+      document.removeEventListener('keydown', handleEsc);
+    }
+    function handleEsc(e) { if (e.key === 'Escape') { document.getElementById('popup-overlay').classList.remove('active'); document.getElementById('popup-content').innerHTML = ''; document.removeEventListener('keydown', handleEsc); } }
+  </script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>baptiste@portfolio ~ Veille Techno</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="bg-grid"></div>
+  <div class="bg-noise"></div>
+
+  <main class="terminal">
+
+    <header class="term-header">
+      <div class="term-buttons">
+        <span class="btn-close"></span>
+        <span class="btn-min"></span>
+        <span class="btn-max"></span>
+      </div>
+      <div class="term-title">baptiste@portfolio: ~/veille</div>
+      <div class="term-tabs">
+        <span class="tab active">~ /veille</span>
+      </div>
+    </header>
+
+    <nav class="navbar" aria-label="Navigation principale">
+      <a href="index.html"       class="nav-link"><span class="nav-key">:about</span></a>
+      <a href="projets.html"     class="nav-link"><span class="nav-key">:projects</span></a>
+      <a href="competences.html" class="nav-link"><span class="nav-key">:skills</span></a>
+      <a href="veille.html"      class="nav-link active"><span class="nav-key">:veille</span></a>
+    </nav>
+
+    <div class="term-body">
+
+      <section id="veille" class="section">
+
+        <div class="prompt-line">
+          <span class="ps1-user">baptiste</span><span class="ps1-at">@</span><span class="ps1-host">portfolio</span>
+          <span class="ps1-arrow"> </span><span class="ps1-path">~/veille</span>
+          <span class="ps1-prompt"> ❯ </span>
+          <span class="ps1-cmd">cat veille-technologique.md</span>
+        </div>
+
+        <article class="md-output">
+          <p><span class="md-h"># Veille Technologique</span></p>
+          <p>
+            La veille technologique est un processus de surveillance et d'analyse des innovations
+            et des tendances dans un domaine spécifique. Elle permet aux entreprises d'anticiper
+            les évolutions, d'informer leurs décisions stratégiques et de maintenir leur
+            compétitivité. Dans un domaine qui évolue tous les six mois, faire une veille
+            structurée est une posture professionnelle essentielle.
+          </p>
+
+          <p><span class="md-h">## Contexte</span></p>
+          <p>
+            Dans le cadre de mon BTS SIO, j'ai mis en place une veille informationnelle afin
+            de suivre les évolutions technologiques utiles à mon parcours et à mon développement
+            professionnel. Cette démarche s'inscrit dans la compétence
+            <em>« Organiser son développement professionnel »</em> du référentiel B1.
+            Elle a été réalisée sur l'ensemble de mes deux années de formation.
+          </p>
+
+          <p><span class="md-h">## Thème de veille</span></p>
+          <p>
+            Mon thème principal porte sur les technologies utiles au développement d'applications.
+            J'ai structuré cette veille autour de trois axes principaux :
+          </p>
+          <ul class="md-list">
+            <li>l'<em>intelligence artificielle</em>, en particulier Claude développé par Anthropic ;</li>
+            <li><em>Java</em>, un langage que j'apprécie particulièrement ;</li>
+            <li><em>Django</em>, framework Python utilisé pour le développement backend.</li>
+          </ul>
+          <p>
+            Ce choix me permet de suivre à la fois des outils récents, des technologies
+            que j'utilise déjà et des ressources directement utiles à mes projets.
+          </p>
+
+          <p><span class="md-h">## Stratégie de collecte</span></p>
+          <p>
+            J'organise ma veille sur <em>deux canaux complémentaires</em> :
+            <em>Flipboard</em> pour la veille de fond éditoriale, et un serveur Discord
+            personnel alimenté en RSS via <em>MonitoRSS</em> pour la veille chaude.
+            Je consulte ma veille environ tous les quinze jours, en sélectionnant
+            en priorité les contenus récents ayant un lien direct avec mes usages.
+          </p>
+
+          <p><span class="md-h">## Exploitation des données</span></p>
+          <p>Je retiens surtout les articles qui :</p>
+          <ul class="md-list">
+            <li>présentent une nouveauté importante ;</li>
+            <li>proposent des conseils concrets pour le développement ;</li>
+            <li>apportent des outils ou bibliothèques réutilisables ;</li>
+            <li>permettent de mieux comprendre les évolutions du secteur.</li>
+          </ul>
+        </article>
+
+        <!-- Axes de veille -->
+        <div class="prompt-line">
+          <span class="ps1-user">baptiste</span><span class="ps1-at">@</span><span class="ps1-host">portfolio</span>
+          <span class="ps1-arrow"> </span><span class="ps1-path">~/veille</span>
+          <span class="ps1-prompt"> ❯ </span>
+          <span class="ps1-cmd">ls ./axes/</span>
+        </div>
+
+        <div class="veille-grid">
+
+          <article class="veille-card cyber">
+            <header>
+              <span class="vc-axis">[ AXE 01 ]</span>
+              <h3>Cybersécurité</h3>
+            </header>
+            <p>En lien direct avec mon projet professionnel cyber/défense.</p>
+            <ul class="vc-sources">
+              <li><strong>Flipboard</strong> · Cybersecurity and Data Hacks <span>— The Tech Desk</span></li>
+              <li><strong>RSS</strong> · BleepingComputer · The Hacker News</li>
+            </ul>
+          </article>
+
+          <article class="veille-card ai">
+            <header>
+              <span class="vc-axis">[ AXE 02 ]</span>
+              <h3>IA &amp; Développement</h3>
+            </header>
+            <p>
+              Les outils IA changent la manière dont on développe au quotidien.
+              J'ai observé une augmentation de la visibilité de Claude et d'Anthropic,
+              et suivi pourquoi certains utilisateurs passent de ChatGPT à Claude.
+            </p>
+            <ul class="vc-sources">
+              <li><strong>Flipboard</strong> · Claude <span>— Noah Buchanan</span></li>
+            </ul>
+          </article>
+
+          <article class="veille-card web">
+            <header>
+              <span class="vc-axis">[ AXE 03 ]</span>
+              <h3>Django &amp; Java</h3>
+            </header>
+            <p>
+              Pour Django, identification de bibliothèques utiles au backend.
+              Pour Java, articles sur l'optimisation, la performance
+              et la maintenabilité du code.
+            </p>
+            <ul class="vc-sources">
+              <li><strong>Flipboard</strong> · JAVA SCRIPT NUGGETS <span>— Gary Owl</span></li>
+              <li><strong>Flipboard</strong> · Django feeds <span>— diverses sources</span></li>
+            </ul>
+          </article>
+
+        </div>
+
+        <!-- Synthèse -->
+        <div class="prompt-line" style="margin-top: 28px;">
+          <span class="ps1-user">baptiste</span><span class="ps1-at">@</span><span class="ps1-host">portfolio</span>
+          <span class="ps1-arrow"> </span><span class="ps1-path">~/veille</span>
+          <span class="ps1-prompt"> ❯ </span>
+          <span class="ps1-cmd">cat synthese.md</span>
+        </div>
+
+        <article class="md-output">
+          <p><span class="md-h">## Synthèse des informations recueillies</span></p>
+
+          <p><span class="md-h">### Intelligence artificielle</span></p>
+          <p>
+            J'ai suivi plusieurs contenus autour de Claude et d'Anthropic. Comme il s'agit
+            d'un outil que j'utilise souvent, cet axe m'intéresse particulièrement.
+            J'ai observé une augmentation de sa visibilité et de son utilisation dans des
+            contextes liés au développement et à l'assistance technique. Un article récent
+            expliquait pourquoi certains utilisateurs choisissent de passer de ChatGPT à Claude,
+            ce qui montre que ce domaine évolue rapidement.
+          </p>
+
+          <p><span class="md-h">### Django</span></p>
+          <p>
+            Ma veille m'a permis d'identifier des articles présentant plusieurs bibliothèques
+            utiles pour le développement backend. Ces ressources montrent qu'il existe de
+            nombreux outils permettant d'accélérer le développement, de structurer plus
+            proprement une application et d'ajouter des fonctionnalités sans repartir de zéro.
+            Cet axe est directement utile pour mes projets en Python.
+          </p>
+
+          <p><span class="md-h">### Java</span></p>
+          <p>
+            Les articles consultés mettaient en avant des conseils d'optimisation du code
+            et des applications. J'ai retenu que la performance, la lisibilité et la
+            maintenabilité restent des enjeux majeurs, même sur une technologie déjà très
+            installée. Cette veille me permet de découvrir de nouvelles pratiques et
+            d'améliorer ma façon de développer.
+          </p>
+
+          <p><span class="md-h">## Apports de la veille</span></p>
+          <ul class="md-list">
+            <li>Suivre l'évolution de technologies que j'utilise ou que j'apprécie ;</li>
+            <li>identifier des outils utiles pour mes projets ;</li>
+            <li>améliorer mes pratiques de développement ;</li>
+            <li>développer une habitude professionnelle importante dans le domaine informatique.</li>
+          </ul>
+
+          <p><span class="md-h">## Diffusion</span></p>
+          <p>
+            La diffusion se fait à travers mon portfolio et sera valorisée lors de
+            l'épreuve E4 à l'oral, pour montrer ma capacité à mettre en place une
+            veille structurée et utile à mon développement professionnel.
+          </p>
+        </article>
+
+        <!-- Footer veille -->
+        <div class="veille-footer">
+          <span class="status">●</span>
+          <span>2 canaux · 3 axes · 5 sources distinctes · mise à jour tous les 15 jours</span>
+        </div>
+
+        <!-- Lien Flipboard -->
+        <div style="margin-top: 16px; padding: 0 4px;">
+          <a href="https://flipboard.com/@baptistecha7icr/veil-technologique-42bgubo1z?from=share&utm_source=flipboard&utm_medium=curator_share"
+             target="_blank" class="btn-flipboard">
+            ↗ Voir ma veille sur Flipboard
+          </a>
+        </div>
+
+        <div class="prompt-line idle">
+          <span class="ps1-user">baptiste</span><span class="ps1-at">@</span><span class="ps1-host">portfolio</span>
+          <span class="ps1-arrow"> </span><span class="ps1-path">~/veille</span>
+          <span class="ps1-prompt"> ❯ </span>
+          <span class="cursor">█</span>
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="statusbar">
+      <span class="sb-left">
+        <span class="sb-mode">NORMAL</span>
+        <span class="sb-file">~/portfolio/veille.html</span>
+      </span>
+      <span class="sb-right">
+        <span class="sb-info">utf-8</span>
+        <span class="sb-info">html</span>
+        <span class="sb-info">100%</span>
+        <span class="sb-info" id="clock">--:--</span>
+      </span>
+    </footer>
+
+  </main>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
